@@ -1,0 +1,172 @@
+﻿@page "/counter"
+@inject HttpClient Http
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+<style>
+    
+    body {
+        font-family: 'Quicksand', sans-serif;
+        background-color: #f8f9fa;
+    }
+
+    h1 {
+        color: crimson;
+    }
+
+    .row {
+        margin-top: 20px;
+    }
+
+    .form-group {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        width: 90%;
+    }
+
+    label {
+        font-weight: bold;
+        color: #343a40;
+    }
+
+    input {
+        width: 30%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+    }
+
+    .btn-primary {
+        background-color: yellow;
+        color: black;
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 8px 16px;
+        cursor: pointer;
+    }
+    p {
+        color: #6c757d;
+        margin-bottom: 0;
+    }
+
+    em {
+        color: #6c757d;
+    }
+
+    .estiloG
+    {
+        color: green;
+    }
+
+    .estiloR
+    {
+        color: crimson;
+    }
+</style>
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Práctica</h1>
+
+@if (ListaIrregular == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="row">
+        <div class="col-8 form-group">
+            <label for="Forma_Base" class="col-form-label">Verbo : </label>&nbsp;&nbsp;
+            @if (VerboAleatorio != null)
+            {
+                <label for="FormaBase" class="col-form-label">@VerboAleatorio.Forma_base</label>
+                <br><br>
+            }
+            <label for="Traduccion" class="col-form-label">Traducción</label>
+            <input type="text" @bind="@TraduccionIngresada">
+            <button class="btn btn-primary" @onclick="Validar">Validar</button>
+            &nbsp;&nbsp;
+            @if(ResultadoValidacion == "¡Correcto!")
+            {
+                <label class="estiloG">@ResultadoValidacion</label><br><br><br>
+            }else
+            {
+                <label class="estiloR">@ResultadoValidacion</label><br><br><br>
+            }
+            
+            @foreach (var i in FraseAleatoria)
+            {
+                <p><label for="FM" class="col-form-label">Forma Base: </label>&nbsp;@i.Forma_base</p>
+                <p><label for="PR" class="col-form-label">Preterito: </label>&nbsp; @i.Preterito</p>
+                <p><label for="PP" class="col-form-label">Pasado Participio: </label>&nbsp; @i.Pasado_participio</p>
+            }<br>
+            <button class="btn btn-primary" @onclick="SiguienteVerbo">Siguiente</button><br>
+        </div>
+    </div>
+}
+
+@code {
+
+    private int codigo_Consecutivo;
+    private string TraduccionIngresada;
+    private static ModeloIrregular? VerboAleatorio;
+    private static List<ModeloIrregular> FraseAleatoria;
+    private ModeloIrregular modeloIrregular = new ModeloIrregular();
+    private List<ModeloIrregular>? ListaIrregular;
+    private List<ModeloIrregular>? ListaVerbos;
+    private string ResultadoValidacion = "";
+
+    Random Aleatorio = new Random();
+
+    protected override async Task OnInitializedAsync()
+    {
+        ListaIrregular = (await Http.GetFromJsonAsync<ModeloIrregular[]>("sample-data/Verbos.json"))?.ToList();
+        ListaVerbos = (await Http.GetFromJsonAsync<ModeloIrregular[]>("sample-data/Frases.json"))?.ToList();
+
+        SeleccionarNuevaPalabraAleatoria();
+        DevuelveConsecutivoVerbo();
+        SeleccionaFrase(codigo_Consecutivo);
+    }
+
+    private void Validar()
+    {
+        if (VerboAleatorio != null && TraduccionIngresada == VerboAleatorio.Traduccion)
+        {
+            ResultadoValidacion = "¡Correcto!";            
+        }
+        else
+        {
+            ResultadoValidacion = "Incorrecto.";
+        }
+    }
+
+    public void SiguienteVerbo()
+    {
+        TraduccionIngresada = "";
+        ResultadoValidacion = "";
+        SeleccionarNuevaPalabraAleatoria();
+        DevuelveConsecutivoVerbo();
+        SeleccionaFrase(codigo_Consecutivo);
+    }
+    private void SeleccionarNuevaPalabraAleatoria()
+    {
+        int ConsecutivoAleatorio = Aleatorio.Next(1, 51);
+        VerboAleatorio = ListaIrregular.FirstOrDefault(p => p.Consecutivo == ConsecutivoAleatorio);
+    }
+    private void SeleccionaFrase(int codigo_Consecutivo)
+    {
+        FraseAleatoria = ListaVerbos.Where(p => p.Consecutivo == codigo_Consecutivo).ToList();
+    }
+    private int DevuelveConsecutivoVerbo()
+    {
+        codigo_Consecutivo = VerboAleatorio.Consecutivo;
+
+        return codigo_Consecutivo;
+    }
+
+}

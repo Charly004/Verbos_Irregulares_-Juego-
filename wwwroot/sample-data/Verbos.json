@@ -1,0 +1,352 @@
+[
+    {
+        "Consecutivo": 1,
+        "Forma_base": "To be (Am, are, is)",
+        "Preterito": "Was - Were",
+        "Pasado_participio": "Been",
+        "Traduccion": "Ser - Estar"
+    },
+    {
+        "Consecutivo": 2,
+        "Forma_base": "Awake",
+        "Preterito": "Awoke",
+        "Pasado_participio": "Awoken",
+        "Traduccion": "Despertar"
+    },
+    {
+        "Consecutivo": 3,
+        "Forma_base": "Become",
+        "Preterito": "Became",
+        "Pasado_participio": "Become",
+        "Traduccion": "Convertirse"
+    },
+    {
+        "Consecutivo": 4,
+        "Forma_base": "Bite",
+        "Preterito": "Bit",
+        "Pasado_participio": "Bitten",
+        "Traduccion": "Morder"
+    },
+    {
+        "Consecutivo": 5,
+        "Forma_base": "Break",
+        "Preterito": "Broke",
+        "Pasado_participio": "Broken",
+        "Traduccion": "Romper"
+    },
+    {
+        "Consecutivo": 6,
+        "Forma_base": "Bring",
+        "Preterito": "Brought",
+        "Pasado_participio": "Brought",
+        "Traduccion": "Traer-Llevar"
+    },
+    {
+        "Consecutivo": 7,
+        "Forma_base": "Buy",
+        "Preterito": "Bought",
+        "Pasado_participio": "Bought",
+        "Traduccion": "Comprar"
+    },
+    {
+        "Consecutivo": 8,
+        "Forma_base": "Creep",
+        "Preterito": "Crept",
+        "Pasado_participio": "Crept",
+        "Traduccion": "Arrastrarse"
+    },
+    {
+        "Consecutivo": 9,
+        "Forma_base": "Do - Does",
+        "Preterito": "Did",
+        "Pasado_participio": "Done",
+        "Traduccion": "Hacer"
+    },
+    {
+        "Consecutivo": 10,
+        "Forma_base": "Drink",
+        "Preterito": "Drank",
+        "Pasado_participio": "Drunk",
+        "Traduccion": "Beber"
+    },
+    {
+        "Consecutivo": 11,
+        "Forma_base": "Eat",
+        "Preterito": "Ate",
+        "Pasado_participio": "Eaten",
+        "Traduccion": "Comer"
+    },
+    {
+        "Consecutivo": 12,
+        "Forma_base": "Feel",
+        "Preterito": "Felt",
+        "Pasado_participio": "Felt",
+        "Traduccion": "Sentir"
+    },
+    {
+        "Consecutivo": 13,
+        "Forma_base": "Fly",
+        "Preterito": "Flew",
+        "Pasado_participio": "Flown",
+        "Traduccion": "Volar"
+    },
+    {
+        "Consecutivo": 14,
+        "Forma_base": "Forget",
+        "Preterito": "Forgot",
+        "Pasado_participio": "Forgotten",
+        "Traduccion": "Olvidar"
+    },
+    {
+        "Consecutivo": 15,
+        "Forma_base": "Go",
+        "Preterito": "Went",
+        "Pasado_participio": "Gone",
+        "Traduccion": "Ir"
+    },
+    {
+        "Consecutivo": 16,
+        "Forma_base": "Have",
+        "Preterito": "Had",
+        "Pasado_participio": "Had",
+        "Traduccion": "Haber"
+    },
+    {
+        "Consecutivo": 17,
+        "Forma_base": "Hear",
+        "Preterito": "Heard",
+        "Pasado_participio": "Heard",
+        "Traduccion": "Oír"
+    },
+    {
+        "Consecutivo": 18,
+        "Forma_base": "Hit",
+        "Preterito": "Hit",
+        "Pasado_participio": "Hit",
+        "Traduccion": "Golpear"
+    },
+    {
+        "Consecutivo": 19,
+        "Forma_base": "Hurt",
+        "Preterito": "Hurt",
+        "Pasado_participio": "Hurt",
+        "Traduccion": "Herir"
+    },
+    {
+        "Consecutivo": 20,
+        "Forma_base": "Know",
+        "Preterito": "Knew",
+        "Pasado_participio": "Known",
+        "Traduccion": "Saber - Conocer"
+    },
+    {
+        "Consecutivo": 21,
+        "Forma_base": "Lay",
+        "Preterito": "Laid",
+        "Pasado_participio": "Laid",
+        "Traduccion": "Poner"
+    },
+    {
+        "Consecutivo": 22,
+        "Forma_base": "Learn - Learnt",
+        "Preterito": "Learned - Learnt",
+        "Pasado_participio": "Learned",
+        "Traduccion": "Aprender"
+    },
+    {
+        "Consecutivo": 23,
+        "Forma_base": "Leave",
+        "Preterito": "Left",
+        "Pasado_participio": "Left",
+        "Traduccion": "Dejar"
+    },
+    {
+        "Consecutivo": 24,
+        "Forma_base": "Let",
+        "Preterito": "Let",
+        "Pasado_participio": "Let",
+        "Traduccion": "Permitir"
+    },
+    {
+        "Consecutivo": 25,
+        "Forma_base": "Lie",
+        "Preterito": "Lay",
+        "Pasado_participio": "Lain",
+        "Traduccion": "Echarse"
+    },
+    {
+        "Consecutivo": 26,
+        "Forma_base": "Light",
+        "Preterito": "Lit - Lighted",
+        "Pasado_participio": "Lit - Lighted",
+        "Traduccion": "Encender"
+    },
+    {
+        "Consecutivo": 27,
+        "Forma_base": "Lose",
+        "Preterito": "Lost",
+        "Pasado_participio": "Lost",
+        "Traduccion": "Perder"
+    },
+    {
+        "Consecutivo": 28,
+        "Forma_base": "Make",
+        "Preterito": "Made",
+        "Pasado_participio": "Made",
+        "Traduccion": "Hacer"
+    },
+    {
+        "Consecutivo": 29,
+        "Forma_base": "Pay",
+        "Preterito": "Paid",
+        "Pasado_participio": "Paid",
+        "Traduccion": "Pagar"
+    },
+    {
+        "Consecutivo": 30,
+        "Forma_base": "Put",
+        "Preterito": "Put",
+        "Pasado_participio": "Put",
+        "Traduccion": "Poner"
+    },
+    {
+        "Consecutivo": 31,
+        "Forma_base": "Read",
+        "Preterito": "Read",
+        "Pasado_participio": "Read",
+        "Traduccion": "Leer"
+    },
+    {
+        "Consecutivo": 32,
+        "Forma_base": "Ring",
+        "Preterito": "Rang",
+        "Pasado_participio": "Rung",
+        "Traduccion": "Llamar"
+    },
+    {
+        "Consecutivo": 33,
+        "Forma_base": "Run",
+        "Preterito": "Ran",
+        "Pasado_participio": "Run",
+        "Traduccion": "Correr"
+    },
+    {
+        "Consecutivo": 34,
+        "Forma_base": "Say",
+        "Preterito": "Said",
+        "Pasado_participio": "Said",
+        "Traduccion": "Decir"
+    },
+    {
+        "Consecutivo": 35,
+        "Forma_base": "See",
+        "Preterito": "Saw",
+        "Pasado_participio": "Seen",
+        "Traduccion": "Ver"
+    },
+    {
+        "Consecutivo": 36,
+        "Forma_base": "Sell",
+        "Preterito": "Sold",
+        "Pasado_participio": "Sold",
+        "Traduccion": "Vender"
+    },
+    {
+        "Consecutivo": 37,
+        "Forma_base": "Send",
+        "Preterito": "Sent",
+        "Pasado_participio": "Sent",
+        "Traduccion": "Enviar"
+    },
+    {
+        "Consecutivo": 38,
+        "Forma_base": "Set",
+        "Preterito": "Set",
+        "Pasado_participio": "Set",
+        "Traduccion": "Poner(se)"
+    },
+    {
+        "Consecutivo": 39,
+        "Forma_base": "Shake",
+        "Preterito": "Shook",
+        "Pasado_participio": "Shaken",
+        "Traduccion": "Sacudir"
+    },
+    {
+        "Consecutivo": 40,
+        "Forma_base": "Shut",
+        "Preterito": "Shut",
+        "Pasado_participio": "Shut",
+        "Traduccion": "Cerrar"
+    },
+    {
+        "Consecutivo": 41,
+        "Forma_base": "Sing",
+        "Preterito": "Sang",
+        "Pasado_participio": "Sung",
+        "Traduccion": "Cantar"
+    },
+    {
+        "Consecutivo": 42,
+        "Forma_base": "Sleep",
+        "Preterito": "Slept",
+        "Pasado_participio": "Slept",
+        "Traduccion": "Dormir"
+    },
+    {
+        "Consecutivo": 43,
+        "Forma_base": "Smell",
+        "Preterito": "Smelt",
+        "Pasado_participio": "Smelt",
+        "Traduccion": "Oler"
+    },
+    {
+        "Consecutivo": 44,
+        "Forma_base": "Spend",
+        "Preterito": "Spent",
+        "Pasado_participio": "Spent",
+        "Traduccion": "Gastar"
+    },
+    {
+        "Consecutivo": 45,
+        "Forma_base": "Steal",
+        "Preterito": "Stole",
+        "Pasado_participio": "Stolen",
+        "Traduccion": "Robar"
+    },
+    {
+        "Consecutivo": 46,
+        "Forma_base": "Strike",
+        "Preterito": "Struck",
+        "Pasado_participio": "Struck",
+        "Traduccion": "Golpear"
+    },
+    {
+        "Consecutivo": 47,
+        "Forma_base": "Swim",
+        "Preterito": "Swam",
+        "Pasado_participio": "Swum",
+        "Traduccion": "Nadar"
+    },
+    {
+        "Consecutivo": 48,
+        "Forma_base": "Teach",
+        "Preterito": "Taught",
+        "Pasado_participio": "Taught",
+        "Traduccion": "Enseñar"
+    },
+    {
+        "Consecutivo": 49,
+        "Forma_base": "Understand",
+        "Preterito": "Understood",
+        "Pasado_participio": "Understood",
+        "Traduccion": "Entender"
+    },
+    {
+        "Consecutivo": 50,
+        "Forma_base": "Win",
+        "Preterito": "Won",
+        "Pasado_participio": "Won",
+        "Traduccion": "Ganar"
+    }
+]
